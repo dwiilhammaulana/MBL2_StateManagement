@@ -10,3 +10,5 @@ class CounterModel extends ChangeNotifier {
     notifyListeners();
   }
 }
+
+// notifyListeners(); berguna untuk memberi nontifikasi kesetiap widget yang sedang mendengarkan jika ada perubahan, dan singkatnya  masih membutuhkan import karena provider hanya digunakan untuk nontifylistener untuk menyampaikan ke masing masing widget
