@@ -11,8 +11,8 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     final counter = Provider.of<CounterModel>(context);
 
-    return Builder(
-      builder: (context) {
+    return Consumer<CounterModel>(
+      builder: (context, value, child) {
         return Scaffold(
           appBar: AppBar(
             backgroundColor: Theme.of(context).colorScheme.inversePrimary,
