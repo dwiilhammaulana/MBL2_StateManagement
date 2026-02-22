@@ -5,7 +5,8 @@ import 'home_page.dart';
 
 void main() {
   runApp(
-    ChangeNotifierProvider(
+    ChangeNotifierProvider( //Ini widget dari package provider yang berfungsi: menyediakan object state ke seluruh widget di bawahnya
+// artinya semua semua widget di dalam bisa mengakses Countermodel MyApp
       create: (context) => CounterModel(),
       child: const MyApp(),
     ),
