@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
+import 'package:provider/provider.dart'; // add ini
 import 'counter_model.dart';
 
 class MyHomePage extends StatelessWidget {
