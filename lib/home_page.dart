@@ -24,7 +24,7 @@ class MyHomePage extends StatelessWidget {
               children: [
                 const Text('You have pushed the button this many times:'),
                 Text(
-                  '${counter.angka}',
+                  value.angka.toString(),
                   style: Theme.of(context).textTheme.headlineMedium,
                 ),
               ],
