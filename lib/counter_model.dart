@@ -1,9 +1,12 @@
-class CounterMode {
+import 'package:flutter/material.dart';
+
+class CounterModel extends ChangeNotifier {
   int _angka = 0;
 
-  int get   angka => _angka;
+  int get angka => _angka;
 
-  void Increment(){
+  void increment() {
     _angka++;
+    notifyListeners();
   }
 }
