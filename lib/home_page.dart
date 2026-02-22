@@ -31,7 +31,9 @@ class MyHomePage extends StatelessWidget {
             ),
           ),
           floatingActionButton: FloatingActionButton(
-            onPressed: () => counter.increment(),
+            onPressed: () {
+              value.increment();
+            },
             tooltip: 'Increment',
             child: const Icon(Icons.add),
           ),
